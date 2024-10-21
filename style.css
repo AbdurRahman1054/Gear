@@ -10,6 +10,7 @@ body {
   /* visibility: hidden;
   background: rgb(170, 170, 170); */
 }
+
 /* shared style */
 .primary-color {
   color: #3a3a3a;
@@ -86,6 +87,59 @@ body {
   border-top: 3px solid rgba(192, 204, 218, 0.1);
   border-bottom: 3px solid rgba(192, 204, 218, 0.1);
 }
+/* hero style end */
+
+/* collection section start */
+.collection {
+  max-width: 1047px;
+  height: auto;
+  margin: 100px auto;
+  /* border: 2px solid black; */
+}
+.collection-heading {
+  font-size: 1.75rem;
+}
+.collectin-card {
+  /* border: 2px solid red; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+}
+.popular {
+  border-radius: 5px;
+  margin-top: 30px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  background: rgb(255, 255, 255);
+  max-width: 329px;
+  height: auto;
+  padding: 17px 15px;
+}
+.card-img {
+  max-width: 300px;
+  height: auto;
+  /* padding: 14px; */
+}
+.card-title {
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin-top: 0px;
+  color: #18191f;
+  /* padding: 14px; */
+}
+.price-tag {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: -24px;
+  margin-bottom: 0px;
+  color: rgba(0, 0, 0, 0.87);
+  /* padding: 14px; */
+}
+.card-description {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: rgb(120, 120, 133);
+  /* padding: 14px; */
+}
 /* responsive for mobile */
 @media screen and (max-width: 576px) {
   .nav-bar {
@@ -94,15 +148,20 @@ body {
     align-items: center; */
     margin: 0px auto;
   }
+  .nav-side {
+    max-width: 415px;
+  }
   .hero {
     flex-direction: column-reverse;
     text-align: center;
   }
   .sponsor {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 50px;
+    margin: 0px auto;
     max-width: 275px;
     height: auto;
+    column-gap: 25px;
   }
   .hero-img {
     background-position: center;
@@ -128,5 +187,13 @@ body {
   .hero-description {
     font-size: 0.875rem;
     font-weight: 500;
+  }
+  .collectin-card {
+    /* border: 2px solid red; */
+
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 30px;
+    margin: 0px auto;
+    max-width: 329px;
   }
 }
