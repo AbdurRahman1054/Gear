@@ -98,6 +98,8 @@ body {
 }
 .collection-heading {
   font-size: 1.75rem;
+  /* border: 2px solid red; */
+  text-align: center;
 }
 .collectin-card {
   /* border: 2px solid red; */
@@ -140,6 +142,27 @@ body {
   color: rgb(120, 120, 133);
   /* padding: 14px; */
 }
+/* .btn-2 {
+  font-size: 1rem;
+} */
+.see-more-parent {
+  height: auto;
+  /* background-color: gray; */
+  text-align: end;
+  margin-top: 50px;
+}
+.see-more {
+  text-decoration: none;
+  color: rgba(224, 44, 109, 0.87);
+  font-size: 1rem;
+  font-weight: 700;
+  /* border: 2px solid red; */
+}
+
+#rahman {
+  grid-row-span: ;
+}
+
 /* responsive for mobile */
 @media screen and (max-width: 576px) {
   .nav-bar {
@@ -148,9 +171,7 @@ body {
     align-items: center; */
     margin: 0px auto;
   }
-  .nav-side {
-    max-width: 415px;
-  }
+
   .hero {
     flex-direction: column-reverse;
     text-align: center;
@@ -189,11 +210,33 @@ body {
     font-weight: 500;
   }
   .collectin-card {
-    /* border: 2px solid red; */
-
     grid-template-columns: repeat(1, 1fr);
     column-gap: 30px;
     margin: 0px auto;
     max-width: 329px;
+  }
+  .see-more-parent {
+    text-align: end;
+    max-width: 325px;
+    margin: 32px auto;
+  }
+  .card-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-top: 0px;
+    color: #18191f;
+  }
+  .price-tag {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: -24px;
+    margin-bottom: 0px;
+    color: rgba(0, 0, 0, 0.87);
+    /* padding: 14px; */
+  }
+  .card-description {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: rgb(120, 120, 133);
   }
 }
